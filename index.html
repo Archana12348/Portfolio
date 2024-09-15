@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Archana Gupta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Archana Gupta</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Archana Gupta</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="code-card">  
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Amarjeet aryan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Archana Gupta</h1>
+         <div class="dynamic-text-container">
+  <p class="section__text__p2" id="dynamic-text"></p>
+  <span class="cursor">&nbsp;</span>
+</div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/archana-gupta1319'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href= 'https://github.com/alpha-metus'"
+          />
+        </div>
+       <!-- <div class="contra-hire-me-button" data-analyticsUserId="d73448f7-3c8a-4719-99ea-0ac72b0970d7" data-theme="light" data-username="amarjeet_aryan_3m76yv3n"></div>
+    <script async src="https://contra.com/static/embed/sdk.js" charset="utf-8"></script>
+      </div>-->
+    </section>
+    </div>    
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Fresher <br />Web Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech Computer Science and Engineering Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <h3>I'm Archana Gupta</h3>
+                <span class="tag"><h4>Web Developer</h4></span>
+                <br/>
+            <p>
+                Hi, I'm a student of <b>B.Tech in Computer Science and Engineering</b>, currently in my <b>7th semester</b>. 
+                Over the past , I've honed my skills in Web Designing, becoming proficient in Web Developer,
+                My journey began by creating designs for various events at my college, 
+                DAV University, where I've participated in many of compitions.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web Designing</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web Developer</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cascading style sheet</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+                <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Other Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ReactJS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <!--<article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />-->
+                <!--<div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+ <section id="projects">
+     <!--<p class="section__text__p1">Browse My Recent</p>-->
+      <!--<h1 class="title">Projects</h1>-->
+      <!--<div class="experience-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+<div class="pa-carousel-widget" style="width:100%; height:480px; display:none;"
+  data-link="https://photos.google.com/share/AF1QipP_ZIgsMAdo4gi7qJTJzVgcYSHRGP8bOVqQpseeSLCnB4JMwOzikKAJ5m2TaxKNMw?key=RWZ1QWg0UnE1UVphdTZTcWx5MlBJX1p3QjY4NEpn"
+  data-title="My projects"
+  data-description="47 new items · Album by Amarjeet Aryan"
+  data-delay="4">
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPCIqQ8wYGAEuivzPeIc5P8v4k3nsha7NVr09vUWfW2gTkUj912Ca73etIPl9u32evQW2xiPCvkkRd1ErB93JmHdS9oqDoeNpfYsD6QUIpZhmILtw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNLFvV27DUX9OgoNZJq_i0R3fPicw3dbKYU3pIK0aEHGPwz4Maigd9TEFqZmck2FZlwwOYrn2Ihrbp_iFKNSkb-HtzNNmbDX9gLfbRn-JzSVNeWkg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOGNA4TvU2JWEBFe7SRaYErNn9euDCNK5Wl6-WG9CPag8Vicbvjx5VC2DbjDVbs-KJ6EHR2Rnd69cRXxZqfKH5DOSJ5IJkt4hUHXuZV11xolzhC6A=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOyn0iao-3AvqR6LmeBsl0ScCr3CLxzaCNsE1N2FuwRG-dZPF9gTh458Au-_TYddpmAehtsrDsDFm1sPUNSfK0aSl7XjHNrplMBC5OTQfPd962uyQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOAEjnCl7oE7a_gqxPsvKJ_61qOHCzzZz8l4V1OQRRkMvXvLHS74p7FJgUOtlTYM_SbeKgilsNIyF6o0UrucewEIf-gq9pasoj4UKUerdIjGbT-0Q=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPsmMgsWGDFkwEyIjoescU6ACrHU2dm5uP4ZuTpd4xcdmkEbpvL0Q2-ouFP6zRCA2zWGcFO2Ba0zyNVWfV_dTDqMgkJS9a5ElVj5XPEbTfVoUeXxQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM9Y8R7tKTJrq_aZOeNHdfrw5bpULdexkjOlG7NMThaimlZXknzhDZ1rhWa_ZWDoXd09lSufQHd1A35vC7aTi5RYn6uyeDq0u6Xxd1dazA4iGiu9Q=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPUX9oZLj6b12HgFQl3PuZtuTFm5jfAuhjGSsoOojWgwcP6Avp9a3UhR5_omDS4x_rz_Wz1Ke-fExZprBja7gQ25e5oi315n9n1BFxs0k9uaWSWRg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNs1X4dHX0kPhnQ6oA-qMDo2dfiGduu_tASb64OHu0p19UO4Hta7SUsp4YYSQmQdHf7PnPM2Hv0_XX_3HNUr4Gg_vOHE4FfPxpLOLCHesE9OXQpJw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNkLny7NTCy_36d4zq_Pq0qhnPcThcb_DaYRRXm3a-xImKluTR8FbpnrxgLyy0ueSSwgHtpwA1sOWMCDtQSPjeiLIThPLT2gYU5tGsw4OZYboQRCw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczN2agDV6CYOHc4ziv_-g8o-8tiT2VBjNBRMSc976BDfpSfGpAvauwFUpZzMH28HxrHEB1sviG4-i4E3Fpjmp611fquGjvFafwy3pxjq03Uai-EMDQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNZhnst5u3-UnpObGj0_fissqj8gN6IkQ65iO6A0_3uANNk09JzWdleYPqJl3ZfIKDbECjQ3x3WEm1xNjH4yKbSEJdhOwILi6QMazmfDM8ffX2paw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPoV2Y0R0NDY2PBzo3QGZZmsfhXbfXH7C8q36TwabZUgXiMGLaCIpugFEreL_Yw4viMfZ-GxWP17xD5GsinglfTeOKwQrCW07kY1l6ds4jBybNDZA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPi_2DyCOvcDcVmz6AwV9pU5jw1R1uEIUq-GfCRFwynOlXj32HruN6ffK9uUGQbUaw2j6D9WD0Sdd4dBNjkgY8CrDKsFYpwOxdB5kfmo1m3HHszLw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOAiTsKPDcb_JnJt3rV6nSTJMhuXKL1DZTKGzdUytIprK35aZ_xVNWLuFvvUkbBxBgL__fkkJJUnEEhLLSDd-M5bYeEksCaz7OveDpdGiT8fwXo2w=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOx--EoMTbLzGwWJF6bDbliw8yh1bb-FKK7pjKvQhicc6gr9lYqnHmwq-IEAGoLknNfeM4t5ZEnGkkD8fFf095FfuaqLCfsPkmFmNmxmCYoYOlNVQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPyUfqvvbC3SYCwiZ3WHDWC3fMfZjm9stzHfdfJsZxK9hDRkWiJJ8Ymld1HmPPbo0eDNADAmDiCWFlzwzvCTFQ-xGAoQftUTtan9Kg3z-TlqSxNiQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMGLM4VSqaNgSIedkRc8YE0amBtf9D74rTIKjYqmKep_PUkVUT-RFv92fMj7a6pn93BmzYUsX4XOh_q50L4NycaG0ufcSQkuZXfWxVy5Te4bDBn8w=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNcAK1MtwWWbeOumDKq28ZLiEK7NuRfmFfnmW34SSPO6Oy4SWUVUrn4U0jIxzc1CA3ozfeVX1y319THyIN0oQqVF_xxyluAHn_xrqb0vlQRPTrKjw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM2Aleg_QdM0m2FH1_GGGiiwNfZmbds9aFiA5L3lXKecn1cbh6q5cq3fsosNNUm7XnrlU2v3B5f3YX2R7qsc3X4DxnttTfahME2z6fa_yBgxV009A=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOUEbPE0tzDXSwlxnaJDFlR1mHx3MA0ZdzwtC_PpFd9Zya9kN0BWW6vhdFK9uGjmxpdQrWcPaEkXRTpSYitTSAPp4pejGDmfC_9G90alsIMHeHVgA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPZSAul1BVPtEPYloVh8icYBrlgvdacua6SkEyHo8IIX3o1IzNOg0gYfLzh2C9hwo0-gZt1MfKqyHJVKWSrwZdf1M7NLbdK4wasJQn8agkfM6Camw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNWXX8zxHdVt2pDIUmlC7p9VAjYsUDJvhDkJxKGnQI6-jYFXstoo86AiOj26DYM2JCUJ_MOxmReQTgHMMxEmq8jgxin0ng4j9UASOEo3ShNe1Y2Jw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMq7hMxkllRHnqBXHWrDwoexs2LQxGVpH2DTY2-LHMMf2khHDoYKnVLthOuG3hWbyvHtIbcdeyZNCUYRWYEITTiFEMhlxa6NxUgop8yppOt6TxXFw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPG49ISMuW1z6DkD4uif1QxCLXkxJ8n1IsrMHFNJImV559qsWzJMFYzxBrbfBDOWD84t0ioVrYwm0Ofmw58c_evlPM0hFnT8UzfFDElfavwYy46gg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPECaBcJ5oxaPqLOxgMl2M2FeUsakhhKl0mV1Fe45bDVtGj-JvZjtpGHI_j_knYGplPCw4u56-MuaMAYbVsjj-ga7_OnnVtgXzL82PCkXVUgIhdIg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMkMCUGIKPdPj1Al7uY39uF3Ve0FCsJS0yDwtat17XcEynQzET3jfzQS1foAbJ180k4MlQr4aM7VhWVvwsheyHuY-mXmr9rgVKeDelF-1EZBjCGaA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMycCuCpQ7eL0WWyPsAWj-Hbqrm5deinhdJnRLnmwmb9pTkyChwY3BMRhkoQ40IxsFt2HjX4AGpU4jNeLqv4KVoRIqphE0SvcuPNGU3TQ5mSW-fIw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNF8VOwZsXLWJPkDH4wIuzBaMhbsgsqEWSdnH30lw0D0_3UgIWXBoVGSWO-OkStQOKi7QL1jxwP8HPX_WcSbBYkGCDIVJJKNJk4MYsJCMIeOlXTqQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO80BS73jIk9Ks6X5h0zLLy-kLaJENuJ3s7UIZmK2rPHxZth1nRsOkeuGnz7Wk-y1ruIrJe8XhMyHD93Gn2GQmn87aOVhVzA5jlLCFHjpRpBxvS_Q=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczN7JuMpevDpA-XODB0UJSowCDFVW4yFQHnPJIyvb5pKdYiu60inXPR9nosBzhqI6CvDkJRotuj7M4vKzLGkTJElEnSzcPXqC0sQKDvFaeF1wIZHYA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNZl33HJuueGz9-M1Ux1Gi9SLFR2R0bVClQepY9VbG7ue4imA5wW9hTbWJG0mHwL3hUIN8QqAz5F5DFCqQyvPFVGc7X4k8ZrsjKp5nAWtz4qlCzqg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPrfEo0ivvtTyZjVC_ofY0HIL00hFunn093TKMdyOLqjGfMunizUobl19XfCH2hSmey_FZ5LXu8YZWKU9ZsJbnhk6Stx3fFBXfR1Gcj-XI-o9igqg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO4qVSxcHsVhZOIa-0a7zhgrMp3gfi0x2GuQ67nXmUgoIw1vlcYUX8iRau97MDQS_YWjmHpGajocYTDtevQqrLwXCubXc4hoplFUaxpJluXi2eZqA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNabqjs0h9_t6J8fhAwPNmjDLZ7o4X65rO1-Lj4_KMy5i9zx1SRG5tEWYfsEkOjN2utmFnsQS5FaLdF1gIvHi5kC0QiKkUj8iAAsD_6P1cIWQT7RQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOXYkuIW4CL0PW0Qvo654c4pXR6Kw-4U3MMq43Q0syauokRyOAYYPhKEItaShMbLYIlhaE2dsXJ8PGyxZxzTq1IX5KeAeDcIxsE2WCGlu9u54-vGA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPn3fCxc_D6hPcPlBLksvhH4aps9-UzpB8nQAmad9I6SCtzk260VcxYMPM09zaowotzOfo5yzK3uSfbbpD8ctl6SUDFv4S7oka9l0I6bbps4ORHiw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMCLpd60kvIhEi4clz7WKts9ZeQrBC44cPeu8ridQMX6xerZtYmIlNUV5fK8WhCFQs8eMD12ll8RkCsaQWgJu4GTRxwzKKzStD_DUSDEJROiXrVog=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNTSQr1LzqKM6h3QvBs-NQHfZyS6G3Noe6HSS7tc5AD0XbmHZo1N424QUBbbK4hDlM5FYfEcvZ4h6G0yBkimaLPRtXybFB1_mB76w34aWsfZZMjPA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczN_EsVTF9Z8MWkLoTEOVAU3kW4y5cD0cce_dAQxW6pr7mvWwVPR7MxlqsSjLSvuY_RhImVR-MUEiP18NWPAsAM2TrPDiDGg8rYmDsXCw5qPXBLT7w=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOXhFUwJW11tGtUIP_iItmgYCpks8VFNccI-1Y5qgFmD3VFrTYi6gQS3CA9ZihJWIAMnLb1LWOjAEatwNjGiDvJjbbRQ4tY0uuEhQPfe6BgSns4xg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPCzFwZRxLRMwYsVPmxgDQxEnyc3o1cpDV1CvybZnniJeNkgvslDIrOXztSqa0nViPcFVbLNvMbYpFPLtlrM4AOjCl6PygDBjxawRGkdGabZdd1dg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOAjoHtolMryMyVD9Irge-z-78o2C_Ma4e8tzyNK_vHy-w115zv8PoGqQpQ2q1gqk2Q10EJLMpVbrMetZsobFZyRpJM8QwqQ5Z6yCplw_hyoiF2Qg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMW6dMXfbhfIwVTuOdBceAflbTWalRc_nojTqknNcE_D1NHzpxMeVDpehlT-752mRlwRp4_dC8JJrqM_uc_5z0wXFf6PzNC05LjWCwH71D4Y2YTgg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPv44IhQvtrYOHU1xh-xo83cy-wxCUZLSWCBDzGwsF3EBlahd-QPuapmBaYmN3P9TQniHBy5uzwVju7jfCVutH33pgn75B04QTrPANOip4dVRGlqg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOsuAcXiT-Xzi4i7jAhAMV9R-yBFcH2kHA7ryEnKJjTPBPLgvcqnI7KwGtbzyR3O3v3Gwr5zJzFBckHn16myZ7WaV9SxuuHP8eaz7Kwa-JGyC-wXg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNLOZ97aFF_Deay48HHGW_5Ye6cDnybRzXDHGNx16ivPhAW7pT1A_ILhrb77CmIWBc3hhw7OoyEZeELOW-2QY-uC8SKWbXOmvbsYdVylzreidQF3Q=w1920-h1080"></object>
+</div>
+
+
+            </div>-->
+           <!-- <div class="google-album">
+        <button
+            class="btn btn-color-2"
+            onclick="location.href='https://photos.google.com/share/AF1QipP_ZIgsMAdo4gi7qJTJzVgcYSHRGP8bOVqQpseeSLCnB4JMwOzikKAJ5m2TaxKNMw?key=RWZ1QWg0UnE1UVphdTZTcWx5MlBJX1p3QjY4NEpn' "
+          >
+            Show All Projects
+          </button>
+        </div>
+            
+          </div>
+        </div>
+      </div >-->
+        
+       <div class="video-section">
+ <!-- <h2 class="video-heading">My Video Work</h2>
+  <div class="carousel-container">
+    <div class="carousel">-->
+      <!-- YouTube Cards -->
+      <!--<div class="card">
+        <iframe width="" height="315" src="https://www.instagram.com/reel/C3Owy3LpDi3/?igsh=N3FlNmRoaG5ia2N1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>-->
+      
+      <!--<div class="card">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kMYcnF4WJdc?si=f6gVfBU20tuhyT3b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>-->
+      <!-- Instagram Cards -->
+       <!-- <div class="card">
+    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/CppNoIGM3AX/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/CppNoIGM3AX/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/CppNoIGM3AX/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by iamonly_αмαяנєєτ (@iamonly_amarjeet)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+</div>
+      <div class="card">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/Cnwfv9utp1s/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/Cnwfv9utp1s/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Click to watch</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/Cnwfv9utp1s/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by iamonly_αмαяנєєτ (@iamonly_amarjeet)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+      </div>
+        <div class="card">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3i9VPGXkEWI?si=teFtZDLM0HPAUVWm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+         <div class="card">
+    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/CoGxm7kp8b4/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/CoGxm7kp8b4/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/CoGxm7kp8b4/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by iamonly_αмαяנєєτ (@iamonly_amarjeet)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+</div>
+      <div class="card">
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/C1b9_76vLLm/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C1b9_76vLLm/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Click to watch</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C1b9_76vLLm/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by iamonly_αмαяנєєτ (@iamonly_amarjeet)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+      </div>
+    
+     
+    </div>
+  </div>-->
+</div>    
+  
+        
+<div class="projects">
+  
+    <b>My Projects</b>
+            
+    <div class="image">
+        <img src="assets/asset.PNG" alt="Asset Fortune">
+        <div class="text">
+            <h1> Asset Fortune</h1>
+            <div class="botex">
+                <p>
+                    In this project, I utilized HTML, CSS,JavaScript ,Bootstrap and ReactJS with Firebase to develop a fully functioning web site . I implemented various features, including the ability to add new category of asset,add material,manage Labs,assign Labs,Manage request and Contact with anyone and shut down the interface.
+                </p>
+                <button class="link" onclick="location.href='https://github.com/alpha-metus/osinweb.git'"><b>Project Link</b></button>
+            
+            </div>
+        </div>
+    </div>
+          
+    
+           <div class="image">
+        <img src="assets/t.PNG" alt="OS in Browser">
+        <div class="text">
+            <h1>Tic-Tac-Toe</h1>
+            <div class="botex">
+                <p>
+                    In this project, I created a simple tic-tac-toe game using Java Srcipt, which serves as implementing and learing java script more easy.
+                
+                </p>
+                <button id="1" class="link" onclick="location.href='https://github.com/alpha-metus/EchoBrief.git'"><b>Project Link</b></button>
+            
+            </div>
+        </div>
+    </div>
+            
+       
+           <div class="image">
+        <img src="assets/rock paper.PNG" alt="OS in Browser">
+        <div class="text">
+            <h1>Rock Paper Scissors</h1>
+            <div class="botex">
+                <p>
+                    For this project, I made a simple game named as Rock Paper Scissor using Java Script. It is played in normal day to day life by Childerns.My motive is for making this kind of game childerns will play and easy to learn.
+                </p>
+                <button class="link" onclick="location.href='https://github.com/alpha-metus/Ai-Aura.git'"><b>Project Link</b></button>
+            
+            </div>
+        </div>
+    </div>
+            
+     
+        <!--    <div class="image">
+        <img src="assets/csv.png" alt="OS in Browser">
+        <div class="text">
+            <h1> CSV Langchain AI</h1>
+            <div class="botex">
+                <p>
+                    In this project, I made CSV LangChain, utilizing Python, OpenAI, and LangChain technologies. This innovative software allows users to upload CSV or PDF files and ask specific questions related to the content, such as requesting a summary or notes. The software then employs advanced AI algorithms to process and analyze the uploaded documents, subsequently providing accurate and insightful answers to the user's queries. CSV LangChain aims to enhance the efficiency of data analysis and information retrieval.
+                
+                </p>
+                <button class="link" onclick="location.href='https://github.com/alpha-metus/CSV_Langchain.git'"><b>Project Link</b></button>
+            
+            </div>
+        </div>
+    </div>-->
+</div>
+        
+<img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+/>        
+</section>
+ <!-- This closing tag was missing -->
+      <section id="contact" style="margin-top: 700px;">
+<section id="contact">
+      <p class="section__text__p1" >Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">archnagupta8656@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="http://www.linkedin.com/in/archana-gupta1319">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Archana Gupta. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+     
+        
+         <div class="floating-button">
+    <a href="https://wa.me/+918699554415" target="_blank" class="whatsapp-button">
+      <img src="assets/whatsapp.png" alt="WhatsApp Button" class="whatsapp-button-image">
+      <span class="whatsapp-button-text">Chat with me</span>
+    </a>
+  </div>
+          <script>
+  // Smooth scrolling function
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+  </body>
+</html>
